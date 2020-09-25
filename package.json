@@ -2,7 +2,8 @@
 	"name": "react-docgen-typescript",
 	"displayName": "React Docgen TypeScript",
 	"description": "Insert react component document in markdown",
-	"version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "canyoutle",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
@@ -47,7 +48,8 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.0.2",
 		"vscode-test": "^1.4.0"
-	},
+  },
+  "repository": "https://github.com/cytle/vscode-react-docgen-typescript",
 	"dependencies": {
 		"react-docgen-typescript": "^1.20.4",
 		"react-docgen-typescript-markdown-render": "^0.0.2"
