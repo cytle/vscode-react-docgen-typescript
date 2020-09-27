@@ -1,5 +1,5 @@
 {
-	"name": "react-docgen-typescript",
+	"name": "vscode-react-docgen-typescript",
 	"displayName": "React Docgen TypeScript",
 	"description": "Insert react component document in markdown",
   "version": "1.0.0",
