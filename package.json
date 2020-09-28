@@ -1,5 +1,5 @@
 {
-	"name": "react-docgen-typescript",
+	"name": "vscode-react-docgen-typescript",
 	"displayName": "React Docgen TypeScript",
 	"description": "Insert react component document in markdown",
   "version": "1.0.0",
@@ -12,18 +12,18 @@
     "Other"
 	],
 	"activationEvents": [
-    "onCommand:react-docgen-typescript.docgenAll",
-    "onCommand:react-docgen-typescript.docgen"
+    "onCommand:vscode-react-docgen-typescript.docgenAll",
+    "onCommand:vscode-react-docgen-typescript.docgen"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
       {
-				"command": "react-docgen-typescript.docgenAll",
+				"command": "vscode-react-docgen-typescript.docgenAll",
 				"title": "Docgen All: Insert all React component document"
 			},
 			{
-				"command": "react-docgen-typescript.docgen",
+				"command": "vscode-react-docgen-typescript.docgen",
 				"title": "Docgen: Insert React component document"
       }
 		]

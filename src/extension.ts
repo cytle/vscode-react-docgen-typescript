@@ -58,8 +58,8 @@ export function activate(context: vscode.ExtensionContext) {
     });
 	};
 
-  context.subscriptions.push(vscode.commands.registerTextEditorCommand('react-docgen-typescript.docgenAll', (textEditor) => reactDocgen(textEditor, { all: true })));
-  context.subscriptions.push(vscode.commands.registerTextEditorCommand('react-docgen-typescript.docgen', (textEditor) => reactDocgen(textEditor, { all: false })));
+  context.subscriptions.push(vscode.commands.registerTextEditorCommand('vscode-react-docgen-typescript.docgenAll', (textEditor) => reactDocgen(textEditor, { all: true })));
+  context.subscriptions.push(vscode.commands.registerTextEditorCommand('vscode-react-docgen-typescript.docgen', (textEditor) => reactDocgen(textEditor, { all: false })));
 }
 
 // this method is called when your extension is deactivated
