@@ -1426,10 +1426,10 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-docgen-typescript-markdown-render@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript-markdown-render/-/react-docgen-typescript-markdown-render-0.0.2.tgz#ffc50d44cdde13d78408658ce178e46f381716bd"
-  integrity sha512-uZrM5oV2ILZtcWUMYSmqrW36Kpv4RyJyMWvR/6pMeiAsf75G0p+7wks2pdrY1rpICTcOimD8bLDQ5IE6lo1mtQ==
+react-docgen-typescript-markdown-render@~0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-docgen-typescript-markdown-render/-/react-docgen-typescript-markdown-render-0.1.0.tgz#4e74a4a9086c3aa77a408e26c1dad244dd7546b0"
+  integrity sha512-NETvwyXjL3xFBDcwy1LEDa9DDDHoIH9TYl3rITpFbc5Tw1IkPvqHSNNhMLHPRRE1Ng0yfA/7HGOQb8yWRAITAA==
   dependencies:
     mdast "^3.0.0"
     react-docgen-typescript "^1.20.4"
@@ -1833,6 +1833,11 @@ vfile@^4.0.0:
     replace-ext "1.0.0"
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
+
+vscode-nls@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/vscode-nls/download/vscode-nls-5.0.0.tgz#99f0da0bd9ea7cda44e565a74c54b1f2bc257840"
+  integrity sha1-mfDaC9nqfNpE5WWnTFSx8rwleEA=
 
 vscode-test@^1.4.0:
   version "1.4.0"

@@ -41,6 +41,10 @@
         {
           "command": "vscode-react-docgen-typescript.insertAllReactDoc",
           "when": "editorLangId == markdown"
+        },
+        {
+          "command": "vscode-react-docgen-typescript.copyAllReactDoc",
+          "when": "editorLangId == typescriptreact"
         }
       ],
       "explorer/context": [
@@ -48,14 +52,10 @@
           "command": "vscode-react-docgen-typescript.copyAllReactDoc"
         }
       ],
-      "editor/title": [
-        {
-          "command": "vscode-react-docgen-typescript.copyAllReactDoc"
-        }
-      ],
       "editor/title/context": [
         {
-          "command": "vscode-react-docgen-typescript.copyAllReactDoc"
+          "command": "vscode-react-docgen-typescript.copyAllReactDoc",
+          "when": "editorLangId == typescriptreact"
         }
       ]
     },
@@ -99,6 +99,7 @@
   "repository": "https://github.com/cytle/vscode-react-docgen-typescript",
   "dependencies": {
     "react-docgen-typescript": "^1.20.4",
-    "react-docgen-typescript-markdown-render": "^0.0.2"
+    "react-docgen-typescript-markdown-render": "~0.1.0",
+    "vscode-nls": "^5.0.0"
   }
 }

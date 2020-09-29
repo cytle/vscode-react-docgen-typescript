@@ -1,7 +1,10 @@
 import * as vscode from 'vscode';
 import { markdownRender } from 'react-docgen-typescript-markdown-render';
 import { reactDocgen } from './reactDocgen';
-import { Options } from "./types";
+import { Options } from "../types";
+import * as nls from 'vscode-nls';
+
+const localize = nls.loadMessageBundle();
 
 export const insertReactDoc = async (textEditor: vscode.TextEditor, options: Options) => {
   // The code you place here will be executed every time your command is executed
@@ -20,7 +23,9 @@ export const insertReactDoc = async (textEditor: vscode.TextEditor, options: Opt
   textEditor.edit((edit) => {
     edit.replace(textEditor.selection, markdownRender(componentDocs));
     const l = componentDocs.length;
+
+		const message = localize('extension.insertReactDoc.showInformationMessage', '成功插入{0}个组件文档', l);
     // Display a message box to the user
-    vscode.window.showInformationMessage(l > 0 ? `Insert ${l} component document` : `Insert ${l} component documents`);
+    vscode.window.showInformationMessage(message);
   });
 };

@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import * as docgen from 'react-docgen-typescript';
-import { Options } from "./types";
+import { Options } from "../types";
 
 export async function reactDocgen(file: vscode.Uri, options: Options) {
   let componentDocs = docgen.parse(file.path, {
