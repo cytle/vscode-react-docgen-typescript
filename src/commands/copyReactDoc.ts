@@ -11,7 +11,9 @@ export const copyReactDoc = async (file: vscode.Uri, options: Options) => {
     await vscode.env.clipboard.writeText(markdownRender(componentDocs));
     const l = componentDocs.length;
 
-		const message = localize('extension.copyReactDoc.showInformationMessage', '成功复制{0}个组件文档', l);
+    const message = l > 1
+      ? localize('extension.copyReactDoc.showInformationMessage', 'Successfully copied {0} component documents', l)
+      : localize('extension.copyReactDoc.showInformationMessage', 'Successfully copied {0} component document', l);
     // Display a message box to the user
     vscode.window.showInformationMessage(message);
   } catch (error) {

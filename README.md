@@ -4,11 +4,11 @@
 
 Generate TS React component document to clipboard
 
-![copyDemo](./images/copyDemo.gif)
+![insertDemo](https://img.alicdn.com/tfs/TB1UVBli5DsXe8jSZR0XXXK6FXa-1084-762.gif)
 
 Insert TS React component documentation in Markdown
 
-![insertDemo](./images/insertDemo.gif)
+![copyDemo](https://img.alicdn.com/tfs/TB1u9TTiSslXu8jSZFuXXXg7FXa-1084-762.gif)
 
 ## Release Notes
 

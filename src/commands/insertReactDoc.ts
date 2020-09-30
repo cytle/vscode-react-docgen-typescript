@@ -20,11 +20,16 @@ export const insertReactDoc = async (textEditor: vscode.TextEditor, options: Opt
     return;
   }
   const componentDocs = await reactDocgen(file, options);
+  if (componentDocs.length === 0) {
+    return;
+  }
   textEditor.edit((edit) => {
     edit.replace(textEditor.selection, markdownRender(componentDocs));
     const l = componentDocs.length;
 
-		const message = localize('extension.insertReactDoc.showInformationMessage', '成功插入{0}个组件文档', l);
+    const message = l > 1
+      ? localize('extension.insertReactDoc.showInformationMessage', 'Successfully inserted {0} component documents', l)
+      : localize('extension.insertReactDoc.showInformationMessage', 'Successfully inserted {0} component document', l);
     // Display a message box to the user
     vscode.window.showInformationMessage(message);
   });

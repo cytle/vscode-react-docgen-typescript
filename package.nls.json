@@ -1,8 +1,8 @@
 {
-  "extension.copyAllReactDoc.title": "生成TS React组件文档到剪贴板",
-  "extension.insertAllReactDoc.title": "插入TS React组件文档",
-  "extension.insertReactDoc.title": "插入部分TS React组件文档",
-  "extension.copyReactDoc.showInformationMessage": "成功复制{0}个组件文档",
-  "extension.insertReactDoc.showInformationMessage": "成功插入{0}个组件文档",
+  "extension.copyAllReactDoc.title": "Generate TS React component document to clipboard",
+  "extension.insertAllReactDoc.title": "Insert TS React component documentation",
+  "extension.insertReactDoc.title": "Insert part of TS React component documentation",
+  "extension.copyReactDoc.showInformationMessage": "Successfully copied {0} component documents",
+  "extension.insertReactDoc.showInformationMessage": "Successfully inserted {0} component documents",
   "extension.loadSuccess": "Congratulations, your extension \"vscode-react-docgen-typescript\" is now active!"
 }
