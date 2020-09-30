@@ -4,6 +4,10 @@ All notable changes to the "react-docgen-typescript" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 1.0.0
+### 1.0.2
 
-- Support docgen commander!
+- feat: Insert TS React component documentation in Markdown
+
+### 1.0.0
+
+- feat: Generate TS React component document to clipboard

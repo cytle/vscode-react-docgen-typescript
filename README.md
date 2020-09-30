@@ -1,14 +1,24 @@
-# react-docgen-typescript
+# vscode-react-docgen-typescript
 
 ## Features
 
-Insert react component document in markdown.
+Generate TS React component document to clipboard
+
+![copyDemo](./images/copyDemo.gif)
+
+Insert TS React component documentation in Markdown
+
+![insertDemo](./images/insertDemo.gif)
 
 ## Release Notes
 
+### 1.0.2
+
+- feat: Insert TS React component documentation in Markdown
+
 ### 1.0.0
 
-- Support docgen commander!
+- feat: Generate TS React component document to clipboard
 
 ### For more information
 
