@@ -2,7 +2,7 @@
   "name": "vscode-react-docgen-typescript",
   "displayName": "React Docgen TypeScript",
   "description": "Insert react component document in markdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "canyoutle",
   "icon": "images/icon.png",
   "engines": {
