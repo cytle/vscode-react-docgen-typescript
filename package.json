@@ -4,7 +4,7 @@
   "description": "Insert react component document in markdown",
   "version": "1.0.2",
   "publisher": "canyoutle",
-  "icon": "https://img.alicdn.com/tfs/TB1Ly_MWhv1gK0jSZFFXXb0sXXa-1200-738.png",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.49.0"
   },
