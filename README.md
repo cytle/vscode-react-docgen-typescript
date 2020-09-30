@@ -4,12 +4,66 @@
 
 Generate TS React component document to clipboard
 
-![insertDemo](https://img.alicdn.com/tfs/TB1UVBli5DsXe8jSZR0XXXK6FXa-1084-762.gif)
+![copyDemo](https://img.alicdn.com/tfs/TB1u9TTiSslXu8jSZFuXXXg7FXa-1084-762.gif)
 
 Insert TS React component documentation in Markdown
 
-![copyDemo](https://img.alicdn.com/tfs/TB1u9TTiSslXu8jSZFuXXXg7FXa-1084-762.gif)
+![insertDemo](https://img.alicdn.com/tfs/TB1UVBli5DsXe8jSZR0XXXK6FXa-1084-762.gif)
 
+Convert the following Component:
+
+``` ts
+import * as React from "react";
+import { Component } from "react";
+
+/**
+ * Column properties.
+ */
+export interface IColumnProps {
+  /**
+   * prop1 description
+   * @default "red"
+   */
+  prop1?: string;
+  /**
+   * prop2 description
+   * @see https://fusion.alibaba-inc.com/
+   */
+  prop2: number;
+  /**
+   * prop3 description a | b
+   */
+  prop3: () => void;
+  /** prop4 description 😄 */
+  prop4: "option1" | "option2" | "option3";
+}
+
+/**
+ * Form column.
+ */
+export class Column extends Component<IColumnProps> {
+  render() {
+    return <div>Test</div>;
+  }
+}
+```
+
+Into
+
+``` markdown
+### Column
+
+Form column.
+
+#### Props
+
+| Name               | Type                                | Default value | Description                                                 |
+| ------------------ | ----------------------------------- | ------------- | ----------------------------------------------------------- |
+| prop1              | string                              | "red"         | prop1 description                                           |
+| prop2 _(required)_ | number                              |               | prop2 description @see https&#x3A;//fusion.alibaba-inc.com/ |
+| prop3 _(required)_ | () => void                          |               | prop3 description a \| b                                    |
+| prop4 _(required)_ | "option1" \| "option2" \| "option3" |               | prop4 description 😄                                        |
+```
 ## Release Notes
 
 ### 1.0.3
