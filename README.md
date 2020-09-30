@@ -12,6 +12,10 @@ Insert TS React component documentation in Markdown
 
 ## Release Notes
 
+### 1.0.3
+
+- fix: Typescript dependency
+
 ### 1.0.2
 
 - feat: Insert TS React component documentation in Markdown
