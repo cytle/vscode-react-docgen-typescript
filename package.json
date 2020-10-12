@@ -18,6 +18,20 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "React Docgen TypeScript",
+      "properties": {
+        "vscode-react-docgen-typescript.renderLanguage": {
+          "type": "string",
+          "default": "en_US",
+          "enum": [
+            "en_US",
+            "zh_CN"
+          ],
+          "description": "%extension.configuration.renderLanguage.description%"
+        }
+      }
+    },
     "menus": {
       "commandPalette": [
         {
@@ -100,7 +114,7 @@
   "repository": "https://github.com/cytle/vscode-react-docgen-typescript",
   "dependencies": {
     "react-docgen-typescript": "^1.20.5",
-    "react-docgen-typescript-markdown-render": "~0.1.0",
+    "react-docgen-typescript-markdown-render": "^0.2.2",
     "typescript": "^4.0.3",
     "vscode-nls": "^5.0.0"
   }

@@ -1,8 +1,8 @@
 import * as vscode from 'vscode';
-import { markdownRender } from 'react-docgen-typescript-markdown-render';
 import { reactDocgen } from './reactDocgen';
 import { Options } from "../types";
 import * as nls from 'vscode-nls';
+import { docgenRender } from './docgenRender';
 
 const localize = nls.loadMessageBundle();
 
@@ -24,7 +24,7 @@ export const insertReactDoc = async (textEditor: vscode.TextEditor, options: Opt
     return;
   }
   textEditor.edit((edit) => {
-    edit.replace(textEditor.selection, markdownRender(componentDocs));
+    edit.replace(textEditor.selection, docgenRender(componentDocs));
     const l = componentDocs.length;
 
     const message = l > 1

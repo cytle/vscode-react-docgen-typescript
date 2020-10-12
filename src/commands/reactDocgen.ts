@@ -5,6 +5,7 @@ import { Options } from "../types";
 export async function reactDocgen(file: vscode.Uri, options: Options) {
   let componentDocs = docgen.parse(file.path, {
     savePropValueAsString: true,
+    shouldExtractValuesFromUnion: true,
   });
   if (options.all || componentDocs.length <= 1) {
     return componentDocs;

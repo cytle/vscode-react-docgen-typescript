@@ -1,14 +1,14 @@
 import * as vscode from 'vscode';
-import { markdownRender } from 'react-docgen-typescript-markdown-render';
 import { reactDocgen } from './reactDocgen';
 import { Options } from "../types";
 import * as nls from 'vscode-nls';
+import { docgenRender } from './docgenRender';
 
 const localize = nls.loadMessageBundle();
 export const copyReactDoc = async (file: vscode.Uri, options: Options) => {
   const componentDocs = await reactDocgen(file, options);
   try {
-    await vscode.env.clipboard.writeText(markdownRender(componentDocs));
+    await vscode.env.clipboard.writeText(docgenRender(componentDocs));
     const l = componentDocs.length;
 
     const message = l > 1

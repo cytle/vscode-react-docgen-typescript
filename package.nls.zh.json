@@ -4,5 +4,6 @@
   "extension.insertReactDoc.title": "插入部分TS React组件文档",
   "extension.copyReactDoc.showInformationMessage": "成功复制{0}个组件文档",
   "extension.insertReactDoc.showInformationMessage": "成功插入{0}个组件文档",
-  "extension.loadSuccess": "Congratulations, your extension \"vscode-react-docgen-typescript\" is now active!"
+  "extension.loadSuccess": "Congratulations, your extension \"vscode-react-docgen-typescript\" is now active!",
+  "extension.configuration.renderLanguage.description": "生成Markdown的语言"
 }

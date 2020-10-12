@@ -4,5 +4,6 @@
   "extension.insertReactDoc.title": "Insert part of TS React component documentation",
   "extension.copyReactDoc.showInformationMessage": "Successfully copied {0} component documents",
   "extension.insertReactDoc.showInformationMessage": "Successfully inserted {0} component documents",
-  "extension.loadSuccess": "Congratulations, your extension \"vscode-react-docgen-typescript\" is now active!"
+  "extension.loadSuccess": "Congratulations, your extension \"vscode-react-docgen-typescript\" is now active!",
+  "extension.configuration.renderLanguage.description": "The language to generate Markdown"
 }
