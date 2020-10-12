@@ -3,9 +3,18 @@ import * as docgen from 'react-docgen-typescript';
 import { Options } from "../types";
 
 export async function reactDocgen(file: vscode.Uri, options: Options) {
+  const filterNodeModules = vscode.workspace.getConfiguration('vscode-react-docgen-typescript').get<boolean>('filterNodeModules');
+
   let componentDocs = docgen.parse(file.path, {
     savePropValueAsString: true,
     shouldExtractValuesFromUnion: true,
+    propFilter: filterNodeModules ? (prop) => {
+      if (prop.parent) {
+        return !prop.parent.fileName.includes("node_modules");
+      }
+
+      return true;
+    }: undefined,
   });
   if (options.all || componentDocs.length <= 1) {
     return componentDocs;

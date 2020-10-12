@@ -66,6 +66,18 @@ Form column.
 ```
 ## Release Notes
 
+### 1.0.6
+
+- feat: support filterNodeModules
+
+### 1.0.5
+
+- feat: support switch language
+
+### 1.0.4
+
+- docs: add README
+
 ### 1.0.3
 
 - fix: Typescript dependency
